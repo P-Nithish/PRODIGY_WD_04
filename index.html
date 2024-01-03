@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithish Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5fe4a38e64.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p class="nam"><span>N</span>ithish</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="A fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hi, I'm <span>Nithish</span></h1>
+                <p>Front-End Developer</p>
+                <img src="images/bg2.jpeg">            
+                <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+        </div>
+    </div>
+
+<!--ABOUT-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/pho.png">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there! I'm Nithish, a dedicated and passionate individual
+                         deeply enthusiastic about frontend web development. 
+                         My dedication to learning fuels my continuous exploration of new technologies 
+                         and design trends within web development and design. Proficient in HTML and CSS.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Student</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Interests</p>
+                        <p class="tab-links" onclick="opentab('Education')">Projects</p>
+                    </div>    
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <!--<li><span>web</span><br>Designing web interface </li>-->
+                            <li>3rd Year M.sc Theoretical Computer Science 
+                               <br> at PSG College of Technology</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li>Interested in Web-Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li>Have Completed 10+ projects 
+                                <br>(including non web-dev projects)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Servises-->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-language"></i>
+                <h2>Languages</h2>
+                <li>PYTHON</li>
+                <li>SQL</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>R</li>
+                <!--<a href="#">Learn More</a>-->
+            </div>
+            <div>
+                <i class="fa-solid fa-table"></i>
+                <h2>Frameworks</h2>
+                <li>DJANGO</li>
+                <li>FLASK</li>
+                <li>SHINY</li>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database</h2>
+                <li>MYSQL</li>
+                <li>POSTGRESQL</li>
+                <li>MONGODB</li>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--Port-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/mus3.jpeg">
+                <div class="layer">
+                    <h3>Musicify</h3>
+                    <p> An user-friendly Music player application using Django framework and
+                        connected to a PostgreSQL Database. Users access personalized music via individual
+                        logins, with a streamlined navigation panel for categorizing genres, moods, languages,
+                        artists, and movie-based songs.</p>
+                    <a href="https://github.com/P-Nithish/Music-Player" target="_blank"><i class="fa-solid fa-code"></i>                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/man2.jpeg">
+                <div class="layer">
+                    <h3>CipherSentinel Vault</h3>
+                    <p>An advanced password manager application built with Tkinter,
+                        providing a user-friendly graphical interface for efficient password management. With
+                        advanced encryption techniques and a user-friendly interface, it provides a reliable
+                        solution for managing and safeguarding your passwords.</p>
+                    <a href="https://github.com/P-Nithish/Password-Manager" target="_blank"><i class="fa-solid fa-code"></i>                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/task2.jpeg">
+                <div class="layer">
+                    <h3>TaskForge</h3>
+                    <p>A software tool designed to help users organize and manage their tasks,
+                        activities, and responsibilities in a systematic and efficient manner. It serves as a digital
+                        task manager, providing a centralized platform where users can create, track, and
+                        prioritize their to-do lists.
+                        </p>
+                    <a href="https://github.com/P-Nithish/To-do-Application" target="_blank"><i class="fa-solid fa-code"></i>                    </a>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://github.com/P-Nithish" target="_blank" class="btn">See more</a>
+
+    </div>
+</div>
+
+
+<!------------contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>  nithish53skp@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>  9486209191</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nithishpandian/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/nithish.7342?utm_source=qr&igsh=MXRhdzRtd3Bkcmdxdw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/P-Nithish" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemen = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemen.style.right = "0";
+    }
+    function closemenu(){
+        sidemen.style.right = "-200px";
+    }
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzaLD6wbM2DBbWIvkzK2R-UvhWdh2MSwEtH1C-_KheeBV7V_WlhiqSl4KzsGgRg0jTY/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""},5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
